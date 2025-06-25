@@ -1,0 +1,5 @@
+[
+  { "handle": "f00b4r", "year": 2006, "first": "Alice", "last": "Smith" },
+  { "handle": "hackzor", "year": 2008 },
+  { "handle": "shellbot", "year": 2010, "first": "Bob", "last": "Jones" }
+]
