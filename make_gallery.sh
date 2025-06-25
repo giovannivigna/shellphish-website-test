@@ -15,7 +15,7 @@ mkdir -p "$THUMB_DIR"
 echo "Generating thumbnails in $THUMB_DIR..."
 find "$PHOTO_DIR" -maxdepth 1 -type f \( -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.png' \) | while read -r img; do
   fname=$(basename "$img")
-  convert "$img" -resize 300x "$THUMB_DIR/$fname"
+  convert "$img" -resize x200 -gravity center -background black -extent 300x200 "$THUMB_DIR/$fname"
 done
 
 echo "Creating HTML gallery at $HTML_FILE..."
@@ -39,7 +39,7 @@ EOF
 find "$THUMB_DIR" -type f \( -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.png' \) | sort | while read -r thumb; do
   full_img="$(basename "$thumb")"
   rel_thumb="thumbs/$(basename "$thumb")"
-  echo "<a href=\"$full_img\" target=\"_blank\"><img src=\"$rel_thumb\" width=\"300\"></a>" >> "$HTML_FILE"
+  echo "<a href=\"$full_img\" target=\"_blank\"><img src=\"$rel_thumb\" height=\"200\"></a>" >> "$HTML_FILE"
 done
 
 echo "</div></body></html>" >> "$HTML_FILE"
