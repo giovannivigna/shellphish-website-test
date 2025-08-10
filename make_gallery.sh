@@ -477,7 +477,7 @@ EOF
 
 # Create main events index
 create_events_index() {
-  local events_index="$EVENTS_DIR/index.html"
+  local events_index="$EVENTS_DIR/gallery.html"
   
   # Check if main index needs to be regenerated
   local index_needs_update=false
@@ -671,4 +671,4 @@ echo "  • Thumbnails created: $total_thumbnails_created"
 echo "  • Thumbnails skipped (already up-to-date): $total_thumbnails_skipped"
 echo "  • Errors encountered: $total_errors"
 echo ""
-echo "🎉 All done! Open $EVENTS_DIR/index.html in your browser to view all events."
+echo "🎉 All done! Open $EVENTS_DIR/gallery.html in your browser to view all events."

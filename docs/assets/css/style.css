@@ -1,19 +1,23 @@
 body {
     font-family: sans-serif;
     margin: 0;
-    background: #111;
-    color: #eee;
+    background: #909090;
+    color: #333;
     padding: 0 1em;
 }
 
 a {
-    color: #69f;
-    text-decoration: none;
+    color: #000000;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 header,
 footer {
-    background: #222;
+    background: #909090;
     padding: 1em;
     text-align: center;
 }
