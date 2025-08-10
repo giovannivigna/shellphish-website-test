@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Photo Gallery - 20130802_DEFCON</title>
+  <style>
+    body { 
+      background:#111; 
+      color:#eee; 
+      font-family:sans-serif; 
+      text-align:center; 
+      margin: 0;
+      padding: 20px;
+    }
+    h1 { 
+      color: #69f; 
+      margin-bottom: 30px;
+    }
+    .gallery { 
+      display: flex; 
+      flex-wrap: wrap; 
+      justify-content: center; 
+      gap: 10px; 
+    }
+    .gallery a { 
+      display: block; 
+      text-decoration: none; 
+    }
+    .gallery img { 
+      border: 2px solid #333; 
+      transition: border-color 0.3s ease;
+      border-radius: 5px;
+    }
+    .gallery a:hover img { 
+      border-color: #69f; 
+      transform: scale(1.05);
+    }
+    .video-indicator {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: rgba(0,0,0,0.8);
+      color: white;
+      padding: 5px 8px;
+      border-radius: 3px;
+      font-size: 12px;
+      font-weight: bold;
+      pointer-events: none;
+    }
+    .back-link {
+      margin-top: 30px;
+    }
+    .back-link a {
+      color: #69f;
+      text-decoration: none;
+      padding: 10px 20px;
+      border: 1px solid #69f;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .back-link a:hover {
+      background-color: #69f;
+      color: #111;
+    }
+  </style>
+</head>
+<body>
+<h1>Photo Gallery - 20130802_DEFCON</h1>
+<div class="gallery">
+</div>
+<div class="back-link">
+  <a href="../index.html">← Back to Events</a>
+</div>
+</body>
+</html>
