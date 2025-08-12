@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Photo Gallery - 20190809_DEFCON</title>
+  <style>
+    body { 
+      background:#111; 
+      color:#eee; 
+      font-family:sans-serif; 
+      text-align:center; 
+      margin: 0;
+      padding: 20px;
+    }
+    h1 { 
+      color: #69f; 
+      margin-bottom: 30px;
+    }
+    .gallery { 
+      display: flex; 
+      flex-wrap: wrap; 
+      justify-content: center; 
+      gap: 10px; 
+    }
+    .gallery a { 
+      display: block; 
+      text-decoration: none; 
+    }
+    .gallery img { 
+      border: 2px solid #333; 
+      transition: border-color 0.3s ease;
+      border-radius: 5px;
+    }
+    .gallery a:hover img { 
+      border-color: #69f; 
+      transform: scale(1.05);
+    }
+    .video-indicator {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: rgba(0,0,0,0.8);
+      color: white;
+      padding: 5px 8px;
+      border-radius: 3px;
+      font-size: 12px;
+      font-weight: bold;
+      pointer-events: none;
+    }
+    .back-link {
+      margin-top: 30px;
+    }
+    .back-link a {
+      color: #69f;
+      text-decoration: none;
+      padding: 10px 20px;
+      border: 1px solid #69f;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .back-link a:hover {
+      background-color: #69f;
+      color: #111;
+    }
+  </style>
+</head>
+<body>
+<h1>Photo Gallery - 20190809_DEFCON</h1>
+<div class="gallery">
+    <a href="20190809_DEFCON_0001.jpeg" target="_blank"><img src="thumbs/20190809_DEFCON_0001.jpg" height="200" alt="20190809_DEFCON_0001.jpeg"></a>
+    <a href="20190809_DEFCON_0003.jpeg" target="_blank"><img src="thumbs/20190809_DEFCON_0003.jpg" height="200" alt="20190809_DEFCON_0003.jpeg"></a>
+    <a href="20190809_DEFCON_0004.mov" target="_blank"><div style="position:relative;display:inline-block;"><img src="thumbs/20190809_DEFCON_0004.jpg" height="200" alt="20190809_DEFCON_0004.mov"><div class="video-indicator">▶ VIDEO</div></div></a>
+    <a href="20190809_DEFCON_0005.jpeg" target="_blank"><img src="thumbs/20190809_DEFCON_0005.jpg" height="200" alt="20190809_DEFCON_0005.jpeg"></a>
+    <a href="20190809_DEFCON_0006.jpeg" target="_blank"><img src="thumbs/20190809_DEFCON_0006.jpg" height="200" alt="20190809_DEFCON_0006.jpeg"></a>
+    <a href="20190809_DEFCON_0007.jpeg" target="_blank"><img src="thumbs/20190809_DEFCON_0007.jpg" height="200" alt="20190809_DEFCON_0007.jpeg"></a>
+    <a href="20190809_DEFCON_0008.jpeg" target="_blank"><img src="thumbs/20190809_DEFCON_0008.jpg" height="200" alt="20190809_DEFCON_0008.jpeg"></a>
+    <a href="20190809_DEFCON_0009.jpeg" target="_blank"><img src="thumbs/20190809_DEFCON_0009.jpg" height="200" alt="20190809_DEFCON_0009.jpeg"></a>
+    <a href="20190809_DEFCON_0010.jpeg" target="_blank"><img src="thumbs/20190809_DEFCON_0010.jpg" height="200" alt="20190809_DEFCON_0010.jpeg"></a>
+    <a href="20190809_DEFCON_0011.mov" target="_blank"><div style="position:relative;display:inline-block;"><img src="thumbs/20190809_DEFCON_0011.jpg" height="200" alt="20190809_DEFCON_0011.mov"><div class="video-indicator">▶ VIDEO</div></div></a>
+    <a href="20190809_DEFCON_0012.jpeg" target="_blank"><img src="thumbs/20190809_DEFCON_0012.jpg" height="200" alt="20190809_DEFCON_0012.jpeg"></a>
+    <a href="20190809_DEFCON_0013.jpeg" target="_blank"><img src="thumbs/20190809_DEFCON_0013.jpg" height="200" alt="20190809_DEFCON_0013.jpeg"></a>
+    <a href="20190809_DEFCON_0015.jpeg" target="_blank"><img src="thumbs/20190809_DEFCON_0015.jpg" height="200" alt="20190809_DEFCON_0015.jpeg"></a>
+    <a href="20190809_DEFCON_0016.jpeg" target="_blank"><img src="thumbs/20190809_DEFCON_0016.jpg" height="200" alt="20190809_DEFCON_0016.jpeg"></a>
+    <a href="20190809_DEFCON_0017.jpeg" target="_blank"><img src="thumbs/20190809_DEFCON_0017.jpg" height="200" alt="20190809_DEFCON_0017.jpeg"></a>
+</div>
+<div class="back-link">
+  <a href="../index.html">← Back to Events</a>
+</div>
+</body>
+</html>

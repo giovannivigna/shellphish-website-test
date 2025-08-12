@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Photo Gallery - 20051209_iCTF</title>
+  <style>
+    body { 
+      background:#111; 
+      color:#eee; 
+      font-family:sans-serif; 
+      text-align:center; 
+      margin: 0;
+      padding: 20px;
+    }
+    h1 { 
+      color: #69f; 
+      margin-bottom: 30px;
+    }
+    .gallery { 
+      display: flex; 
+      flex-wrap: wrap; 
+      justify-content: center; 
+      gap: 10px; 
+    }
+    .gallery a { 
+      display: block; 
+      text-decoration: none; 
+    }
+    .gallery img { 
+      border: 2px solid #333; 
+      transition: border-color 0.3s ease;
+      border-radius: 5px;
+    }
+    .gallery a:hover img { 
+      border-color: #69f; 
+      transform: scale(1.05);
+    }
+    .video-indicator {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: rgba(0,0,0,0.8);
+      color: white;
+      padding: 5px 8px;
+      border-radius: 3px;
+      font-size: 12px;
+      font-weight: bold;
+      pointer-events: none;
+    }
+    .back-link {
+      margin-top: 30px;
+    }
+    .back-link a {
+      color: #69f;
+      text-decoration: none;
+      padding: 10px 20px;
+      border: 1px solid #69f;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .back-link a:hover {
+      background-color: #69f;
+      color: #111;
+    }
+  </style>
+</head>
+<body>
+<h1>Photo Gallery - 20051209_iCTF</h1>
+<div class="gallery">
+    <a href="20051209_iCTF_0001.jpg" target="_blank"><img src="thumbs/20051209_iCTF_0001.jpg" height="200" alt="20051209_iCTF_0001.jpg"></a>
+    <a href="20051209_iCTF_0002.jpg" target="_blank"><img src="thumbs/20051209_iCTF_0002.jpg" height="200" alt="20051209_iCTF_0002.jpg"></a>
+    <a href="20051209_iCTF_0003.jpg" target="_blank"><img src="thumbs/20051209_iCTF_0003.jpg" height="200" alt="20051209_iCTF_0003.jpg"></a>
+    <a href="20051209_iCTF_0004.jpg" target="_blank"><img src="thumbs/20051209_iCTF_0004.jpg" height="200" alt="20051209_iCTF_0004.jpg"></a>
+    <a href="20051209_iCTF_0005.jpg" target="_blank"><img src="thumbs/20051209_iCTF_0005.jpg" height="200" alt="20051209_iCTF_0005.jpg"></a>
+    <a href="20051209_iCTF_0006.jpg" target="_blank"><img src="thumbs/20051209_iCTF_0006.jpg" height="200" alt="20051209_iCTF_0006.jpg"></a>
+    <a href="20051209_iCTF_0007.jpg" target="_blank"><img src="thumbs/20051209_iCTF_0007.jpg" height="200" alt="20051209_iCTF_0007.jpg"></a>
+    <a href="20051209_iCTF_0008.jpg" target="_blank"><img src="thumbs/20051209_iCTF_0008.jpg" height="200" alt="20051209_iCTF_0008.jpg"></a>
+    <a href="20051209_iCTF_0009.jpg" target="_blank"><img src="thumbs/20051209_iCTF_0009.jpg" height="200" alt="20051209_iCTF_0009.jpg"></a>
+    <a href="20051209_iCTF_0010.jpg" target="_blank"><img src="thumbs/20051209_iCTF_0010.jpg" height="200" alt="20051209_iCTF_0010.jpg"></a>
+    <a href="20051209_iCTF_0011.jpg" target="_blank"><img src="thumbs/20051209_iCTF_0011.jpg" height="200" alt="20051209_iCTF_0011.jpg"></a>
+    <a href="20051209_iCTF_0012.jpg" target="_blank"><img src="thumbs/20051209_iCTF_0012.jpg" height="200" alt="20051209_iCTF_0012.jpg"></a>
+    <a href="20051209_iCTF_0013.mov" target="_blank"><div style="position:relative;display:inline-block;"><img src="thumbs/20051209_iCTF_0013.jpg" height="200" alt="20051209_iCTF_0013.mov"><div class="video-indicator">▶ VIDEO</div></div></a>
+    <a href="20051209_iCTF_0014.jpg" target="_blank"><img src="thumbs/20051209_iCTF_0014.jpg" height="200" alt="20051209_iCTF_0014.jpg"></a>
+    <a href="20051209_iCTF_0015.jpg" target="_blank"><img src="thumbs/20051209_iCTF_0015.jpg" height="200" alt="20051209_iCTF_0015.jpg"></a>
+    <a href="20051209_iCTF_0016.jpg" target="_blank"><img src="thumbs/20051209_iCTF_0016.jpg" height="200" alt="20051209_iCTF_0016.jpg"></a>
+    <a href="20051209_iCTF_0017.jpg" target="_blank"><img src="thumbs/20051209_iCTF_0017.jpg" height="200" alt="20051209_iCTF_0017.jpg"></a>
+    <a href="20051209_iCTF_0018.jpg" target="_blank"><img src="thumbs/20051209_iCTF_0018.jpg" height="200" alt="20051209_iCTF_0018.jpg"></a>
+    <a href="20051209_iCTF_0019.jpg" target="_blank"><img src="thumbs/20051209_iCTF_0019.jpg" height="200" alt="20051209_iCTF_0019.jpg"></a>
+    <a href="20051209_iCTF_0020.jpg" target="_blank"><img src="thumbs/20051209_iCTF_0020.jpg" height="200" alt="20051209_iCTF_0020.jpg"></a>
+    <a href="20051209_iCTF_0021.jpg" target="_blank"><img src="thumbs/20051209_iCTF_0021.jpg" height="200" alt="20051209_iCTF_0021.jpg"></a>
+    <a href="20051209_iCTF_0022.jpg" target="_blank"><img src="thumbs/20051209_iCTF_0022.jpg" height="200" alt="20051209_iCTF_0022.jpg"></a>
+    <a href="20051209_iCTF_0023.jpg" target="_blank"><img src="thumbs/20051209_iCTF_0023.jpg" height="200" alt="20051209_iCTF_0023.jpg"></a>
+    <a href="20051209_iCTF_0024.jpg" target="_blank"><img src="thumbs/20051209_iCTF_0024.jpg" height="200" alt="20051209_iCTF_0024.jpg"></a>
+    <a href="20051209_iCTF_0025.jpg" target="_blank"><img src="thumbs/20051209_iCTF_0025.jpg" height="200" alt="20051209_iCTF_0025.jpg"></a>
+    <a href="20051209_iCTF_0026.jpg" target="_blank"><img src="thumbs/20051209_iCTF_0026.jpg" height="200" alt="20051209_iCTF_0026.jpg"></a>
+    <a href="20051209_iCTF_0027.jpg" target="_blank"><img src="thumbs/20051209_iCTF_0027.jpg" height="200" alt="20051209_iCTF_0027.jpg"></a>
+    <a href="20051209_iCTF_0028.jpg" target="_blank"><img src="thumbs/20051209_iCTF_0028.jpg" height="200" alt="20051209_iCTF_0028.jpg"></a>
+    <a href="20051209_iCTF_0029.jpg" target="_blank"><img src="thumbs/20051209_iCTF_0029.jpg" height="200" alt="20051209_iCTF_0029.jpg"></a>
+    <a href="20051209_iCTF_0031.jpg" target="_blank"><img src="thumbs/20051209_iCTF_0031.jpg" height="200" alt="20051209_iCTF_0031.jpg"></a>
+    <a href="20051209_iCTF_0032.jpg" target="_blank"><img src="thumbs/20051209_iCTF_0032.jpg" height="200" alt="20051209_iCTF_0032.jpg"></a>
+    <a href="20051209_iCTF_0033.jpg" target="_blank"><img src="thumbs/20051209_iCTF_0033.jpg" height="200" alt="20051209_iCTF_0033.jpg"></a>
+    <a href="20051209_iCTF_0034.jpg" target="_blank"><img src="thumbs/20051209_iCTF_0034.jpg" height="200" alt="20051209_iCTF_0034.jpg"></a>
+    <a href="20051209_iCTF_0035.jpg" target="_blank"><img src="thumbs/20051209_iCTF_0035.jpg" height="200" alt="20051209_iCTF_0035.jpg"></a>
+    <a href="20051209_iCTF_0036.jpg" target="_blank"><img src="thumbs/20051209_iCTF_0036.jpg" height="200" alt="20051209_iCTF_0036.jpg"></a>
+    <a href="20051209_iCTF_0037.jpg" target="_blank"><img src="thumbs/20051209_iCTF_0037.jpg" height="200" alt="20051209_iCTF_0037.jpg"></a>
+</div>
+<div class="back-link">
+  <a href="../index.html">← Back to Events</a>
+</div>
+</body>
+</html>
