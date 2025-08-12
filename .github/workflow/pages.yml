@@ -1,0 +1,56 @@
+name: Build and Deploy Pages (with LFS)
+
+on:
+  push:
+    branches: [ main ]  # change if your default branch is different
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout (includes LFS)
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+          fetch-depth: 0
+
+      - name: Ensure LFS objects are present
+        run: |
+          git lfs pull
+          git lfs checkout
+
+      # If your site is already just static files in the repo root,
+      # copy them into a dist/ folder to upload.
+      - name: Prepare artifact
+        run: |
+          mkdir -p dist
+          shopt -s dotglob
+          cp -R . dist
+          # Optionally prune things you don't want to publish:
+          rm -rf dist/.git dist/.github
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
