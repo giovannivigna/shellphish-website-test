@@ -12,7 +12,7 @@ The website is published using GitHub Pages and can be accessed at:
 
 - `docs/` - Website files (HTML, CSS, images)
 - `docs/assets/` - Static assets (CSS, images)
-- `docs/private-142b8f0506ac/` - Private photo galleries
+- `docs/4526a11e1d7dd99530870d9cf5a459c0/` - Private photo galleries (the dirname is the result of "echo hacking | md5sum")
 - `make_gallery.sh` - Script to generate photo galleries
 - `make_members.sh` - Script to generate member pages
 
